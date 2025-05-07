@@ -9,8 +9,8 @@ mongoose.connect( MONGODB_URI)
 .catch((err)=>{
     console.log(`error connecting to the mongodd:${err.message}`)
 });
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3007;
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server is running @ http://0.0.0.0:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
