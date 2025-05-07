@@ -9,7 +9,7 @@ mongoose.connect( MONGODB_URI)
 .catch((err)=>{
     console.log(`error connecting to the mongodd:${err.message}`)
 });
-app.listen('3002', '127.0.0.1',()=>{
+app.listen('3002', '0.0.0.0',()=>{
     console.log(`Server is running @ http://127.0.0.1:3002`);
     console.log(`Press Ctrl + C to stop the server`);
 })
